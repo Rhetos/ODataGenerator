@@ -21,7 +21,6 @@ using Rhetos;
 using Rhetos.Compiler;
 using Rhetos.Dsl;
 using System.IO;
-using System.ComponentModel.DataAnnotations;
 using System.ServiceModel;
 
 namespace Rhetos.ODataGenerator

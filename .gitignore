@@ -113,16 +113,3 @@ UpgradeLog*.XML
 # Rhetos build results
 **/ForDeployment/
 *.zip
-Source/Rhetos/bin/Plugins/
-Source/Rhetos/DataMigration/
-Source/Rhetos/DslScripts/
-Source/Rhetos/Resources/
-Source/Rhetos/PackageInfo/
-Install/
-Source/Rhetos/*Trace.xml
-
-# Rhetos user-specific files
-Source/Rhetos/ConnectionStrings.config
-Source/Rhetos/ExtractPackages.txt
-Source/Rhetos/ApplyPackages.txt
-Source/Rhetos/IISExpress.config

@@ -18,7 +18,6 @@
 */
 using Rhetos.Compiler;
 using Rhetos.Extensibility;
-using Rhetos.Generator;
 using Rhetos.Logging;
 using System;
 using System.CodeDom.Compiler;
@@ -66,7 +65,7 @@ namespace Rhetos.ODataGenerator
             {
                 GenerateExecutable = false,
                 GenerateInMemory = false,
-                OutputAssembly = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "Plugins", assemblyName + ".dll"),
+                OutputAssembly = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "Generated", assemblyName + ".dll"),
                 IncludeDebugInformation = true,
                 CompilerOptions = "/optimize"
             };

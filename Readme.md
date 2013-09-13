@@ -18,7 +18,9 @@ Current OData interface only support query operations.
 Prerequisites
 =============
 
-Utilities in this project are based on relative path to Rhetos repository. [Rhetos source](https://github.com/Rhetos/Rhetos) must be downloaded to a folder with relative path "..\..\Rhetos". 
+This package generates a web service that uses Microsoft WCF Data Services 5.0 (it comes with Visual Studio 2012). If you need to deploy the package to a system without Visual Studio, [download and install WCF Data Services](http://www.microsoft.com/en-us/download/details.aspx?id=29306).
+
+Utilities in this project are based on relative path to Rhetos repository. [Rhetos source](https://github.com/Rhetos/Rhetos) must be downloaded to a folder with relative path `..\..\Rhetos`. 
 
 Sample folder structure:
  

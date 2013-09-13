@@ -33,9 +33,9 @@ Sample folder structure:
 Build and Installation
 ======================
 
-Build package with Build.bat. Check BuildError.log for errors.
+Build package with `Build.bat`. Check BuildError.log for errors.
 
 Instalation package creation:
 
-1. Set the new version number in "ChangeVersion.bat" and start it.
-2. Start "CreatePackage.bat". Instalation package (.zip) is going to be created in parent directory of ODataGenerator.
+1. Set the new version number in `ChangeVersion.bat` and start it.
+2. Start `CreatePackage.bat`. Instalation package (.zip) is going to be created in parent directory of ODataGenerator.

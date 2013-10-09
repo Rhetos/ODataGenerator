@@ -1,7 +1,7 @@
 ECHO Target folder = [%1]
 ECHO $(ConfigurationName) = [%2]
 
-SET ThisScriptFolder=%~dp0
+SET ThisScriptFolder="%~dp0"
 
 XCOPY /Y/D/R %ThisScriptFolder%Plugins\Rhetos.ODataGenerator\bin\%2\Rhetos.ODataGenerator.dll %1 || EXIT /B 1
 XCOPY /Y/D/R %ThisScriptFolder%Plugins\Rhetos.ODataGenerator\bin\%2\Rhetos.ODataGenerator.pdb %1 || EXIT /B 1

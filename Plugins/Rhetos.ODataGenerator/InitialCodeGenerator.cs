@@ -243,7 +243,7 @@ namespace Rhetos.OData
             codeBuilder.AddReferencesFromDependency(typeof(Rhetos.Logging.LoggerHelper));
             codeBuilder.AddReferencesFromDependency(typeof(Rhetos.OData.DefaultCommands.ODataQueryCommand));
             codeBuilder.AddReferencesFromDependency(typeof(Rhetos.Processing.IProcessingEngine));
-            codeBuilder.AddReferencesFromDependency(typeof(Rhetos.Security.IClaim));
+            codeBuilder.AddReferencesFromDependency(typeof(Rhetos.Security.Claim));
             codeBuilder.AddReferencesFromDependency(typeof(Rhetos.UserException));
 
             codeBuilder.AddReference(Path.Combine(_rootPath, "ServerDom.dll"));

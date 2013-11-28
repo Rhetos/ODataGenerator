@@ -15,6 +15,14 @@ Current OData interface only support query operations.
 * Expand is not supported.
 * Writeable interface is not supported.
 
+Usage example:
+
+* To query data from entity *Claim* in module *Common* with Rhetos service running on *localhost/Rhetos*, use URI:
+
+        http://localhost/Rhetos/OData/CommonClaim     
+
+* To import data from OData service to Excel 2013, select Data -> From Other Sources -> From OData Data Feed -> paste the link above -> Next -> check CommonClaim -> Finish -> Ok.
+
 Prerequisites
 =============
 

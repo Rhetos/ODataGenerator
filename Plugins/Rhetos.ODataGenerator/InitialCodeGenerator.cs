@@ -96,11 +96,14 @@ namespace Services
     [System.ComponentModel.Composition.Export(typeof(Rhetos.IService))]
     public class ODataServiceInitializer : Rhetos.IService
     {
-
         public void Initialize()
         {
             System.Web.Routing.RouteTable.Routes.Add(new System.ServiceModel.Activation.ServiceRoute(""OData"", 
                           new ODataServiceHostFactory(), typeof(Services.ODataService)));
+        }
+
+        public void InitializeApplicationInstance(System.Web.HttpApplication context)
+        {
         }
     }
 

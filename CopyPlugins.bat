@@ -11,5 +11,8 @@ XCOPY /Y/D/R %ThisScriptFolder%Plugins\Rhetos.ODataGenerator.DefaultConcepts\bin
 XCOPY /Y/D/R %ThisScriptFolder%Plugins\Rhetos.ODataGenerator\bin\%2\Microsoft.Data.Services.dll %1 || EXIT /B 1
 XCOPY /Y/D/R %ThisScriptFolder%Plugins\Rhetos.ODataGenerator\bin\%2\Microsoft.Data.Services.Client.dll %1 || EXIT /B 1
 XCOPY /Y/D/R %ThisScriptFolder%Plugins\Rhetos.ODataGenerator\bin\%2\System.Web.Mvc.dll %1 || EXIT /B 1
+XCOPY /Y/D/R %ThisScriptFolder%Packages\ASP.NET\System.Web.Razor.dll %1 || EXIT /B 1
+XCOPY /Y/D/R %ThisScriptFolder%Packages\ASP.NET\System.Web.WebPages.Razor.dll %1 || EXIT /B 1
+XCOPY /Y/D/R %ThisScriptFolder%Packages\ASP.NET\System.Web.WebPages.dll %1 || EXIT /B 1
 
 EXIT /B 0

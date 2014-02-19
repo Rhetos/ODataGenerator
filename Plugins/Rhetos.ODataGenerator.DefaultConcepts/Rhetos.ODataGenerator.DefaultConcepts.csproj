@@ -61,6 +61,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ModuleExternalReferenceCodeGenerator.cs" />
     <Compile Include="ODataPropertyHelper.cs" />
     <Compile Include="Property\ReferencePropertyCodeGenerator.cs" />
     <Compile Include="Property\SimplePropertyCodeGenerator.cs" />

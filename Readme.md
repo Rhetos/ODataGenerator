@@ -10,18 +10,19 @@ See [rhetos.org](http://www.rhetos.org/) for more information on Rhetos.
 Features
 ========
 
-Current OData interface only support query operations.
+Current OData interface only supports query operations.
 
 * Expand is not supported.
 * Writeable interface is not supported.
 
-Usage example:
+Usage examples:
 
-* To query data from entity *Claim* in module *Common* with Rhetos service running on *localhost/Rhetos*, use URI:
+1. To query data from entity *Claim* in module *Common* with Rhetos service running on *localhost/Rhetos*, use URI:
 
         http://localhost/Rhetos/OData/CommonClaim     
-
-* To import data from OData service to Excel 2013, select Data -> From Other Sources -> From OData Data Feed -> paste the link above -> Next -> check CommonClaim -> Finish -> Ok.
+2. To import data from OData service to Excel 2013, select
+   Data -> Get External Data -> From Other Sources -> From OData Data Feed -> paste the link above -> Next -> check CommonClaim -> Finish -> Ok.
+	* This table in the Excel document is linked to the Rhetos server. By clicking Refresh you can retrieve new data into the Excel table. 
 
 Prerequisites
 =============
@@ -46,4 +47,4 @@ Instalation package creation:
 1. Set the new version number in `ChangeVersion.bat` and start it.
 2. Start `CreatePackage.bat`. Instalation package (.zip) is going to be created in parent directory of ODataGenerator.
 
-The generated web service uses *Microsoft WCF Data Services 5.0* (it comes with Visual Studio 2012). The Data Services dlls are included with the ODataGenerator package. 
+The generated web service uses *Microsoft WCF Data Services 5.0*. The Data Services dlls are automatically deployed with the ODataGenerator package.

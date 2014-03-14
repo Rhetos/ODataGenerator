@@ -15,14 +15,16 @@ Current OData interface only supports query operations.
 * Expand is not supported.
 * Writeable interface is not supported.
 
-Usage examples:
+Usage examples, for Rhetos service running on `http://localhost/Rhetos`:
 
-1. To query data from entity *Claim* in module *Common* with Rhetos service running on *localhost/Rhetos*, use URI:
-
-        http://localhost/Rhetos/OData/CommonClaim     
-2. To import data from OData service to Excel 2013, select
+1. Using **web browser**, query data from entity *Claim* in module *Common* by opening URI: `http://localhost/Rhetos/OData/CommonClaim`
+2. To import data from OData service to **Excel 2013**, use menu
    Data -> Get External Data -> From Other Sources -> From OData Data Feed -> paste the link above -> Next -> check CommonClaim -> Finish -> Ok.
-	* This table in the Excel document is linked to the Rhetos server. By clicking Refresh you can retrieve new data into the Excel table. 
+   * This table in the Excel document is linked to the Rhetos server. By clicking Refresh you can retrieve new data into the Excel table.
+3. Using **LinqPad**: Click *Add connection*, choose *WCF Data Services (OData)*
+   and enter URI `http://localhost/Rhetos/OData`.
+   After reading the service metadata, LinqPad will show all available entities.
+   Right-click on any entity to start querying.
 
 Prerequisites
 =============

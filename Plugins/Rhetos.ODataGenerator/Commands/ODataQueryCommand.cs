@@ -26,6 +26,7 @@ using Autofac.Features.Indexed;
 using Rhetos.Extensibility;
 using Rhetos.Processing;
 using Rhetos.Processing.DefaultCommands;
+using Rhetos.Dom.DefaultConcepts;
 
 namespace Rhetos.OData.DefaultCommands
 {
@@ -33,10 +34,9 @@ namespace Rhetos.OData.DefaultCommands
     [ExportMetadata(MefProvider.Implements, typeof(ODataQueryCommandInfo))]
     public class ODataQueryCommand : ICommandImplementation
     {
-        private readonly IIndex<string, IQueryDataSourceCommandImplementation> _repositories;
+        private readonly GenericRepositories _repositories;
 
-        public ODataQueryCommand(
-            IIndex<string, IQueryDataSourceCommandImplementation> repositories)
+        public ODataQueryCommand(GenericRepositories repositories)
         {
             _repositories = repositories;
         }
@@ -45,8 +45,7 @@ namespace Rhetos.OData.DefaultCommands
         {
             var info = (ODataQueryCommandInfo)commandInfo;
 
-            dynamic repository = _repositories[info.DataSource];
-            var result = (IQueryable)repository.Query();
+            var result = _repositories.GetGenericRepository(info.DataSource).Query();
 
             return new CommandResult
             {

@@ -25,6 +25,7 @@ DEL /Q /F "*.pdb" || GOTO Error1
 @CALL :SafeCopy ..\..\..\..\Rhetos\Source\Rhetos.Security.Interfaces\bin\Debug\Rhetos.Security.Interfaces.??? || GOTO Error1
 
 @CALL :SafeCopy ..\..\..\..\Rhetos\CommonConcepts\Plugins\Rhetos.Dsl.DefaultConcepts\bin\Debug\Rhetos.Dsl.DefaultConcepts.??? || GOTO Error1
+@CALL :SafeCopy ..\..\..\..\Rhetos\CommonConcepts\Plugins\Rhetos.Dom.DefaultConcepts\bin\Debug\Rhetos.Dom.DefaultConcepts.??? || GOTO Error1
 @CALL :SafeCopy ..\..\..\..\Rhetos\CommonConcepts\Plugins\Rhetos.Dom.DefaultConcepts.Interfaces\bin\Debug\Rhetos.Dom.DefaultConcepts.Interfaces.??? || GOTO Error1
 @CALL :SafeCopy ..\..\..\..\Rhetos\CommonConcepts\Plugins\Rhetos.Processing.DefaultCommands.Interfaces\bin\Debug\Rhetos.Processing.DefaultCommands.Interfaces.??? || GOTO Error1
 

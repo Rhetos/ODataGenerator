@@ -61,6 +61,9 @@
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\..\Packages\Rhetos\Rhetos.Compiler.Interfaces.dll</HintPath>
     </Reference>
+    <Reference Include="Rhetos.Dom.DefaultConcepts">
+      <HintPath>..\..\Packages\Rhetos\Rhetos.Dom.DefaultConcepts.dll</HintPath>
+    </Reference>
     <Reference Include="Rhetos.Dom.DefaultConcepts.Interfaces, Version=0.9.7.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\..\Packages\Rhetos\Rhetos.Dom.DefaultConcepts.Interfaces.dll</HintPath>

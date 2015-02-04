@@ -33,7 +33,7 @@ namespace Rhetos.ODataGenerator
     {
         protected override void Load(ContainerBuilder builder)
         {
-            Rhetos.Extensibility.PluginsUtility.RegisterPlugins<IODataGeneratorPlugin>(builder);
+            Rhetos.Extensibility.Plugins.FindAndRegisterPlugins<IODataGeneratorPlugin>(builder);
 
             base.Load(builder);
         }

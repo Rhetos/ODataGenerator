@@ -1,0 +1,39 @@
+﻿<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
+  <metadata>
+    <id>Rhetos.ODataGenerator</id>
+    <version>1.6.0.1</version>
+    <authors>Omega software</authors>
+    <owners>Omega software</owners>
+    <licenseUrl>http://opensource.org/licenses/AGPL-3.0</licenseUrl>
+    <projectUrl>https://github.com/rhetos/rhetos</projectUrl>
+    <description>ODataGenerator is a DSL package (a plugin module) for Rhetos development platform.
+      ODataGenerator automatically generates OData interface (Open Data Protocol) for all entities and other queryable data structures that are defined in a Rhetos application.</description>
+    <copyright>Copyright Omega software 2015</copyright>
+    <tags>Rhetos</tags>
+    <frameworkAssemblies>
+      <frameworkAssembly assemblyName="Rhetos, Version=0.9.25" />
+    </frameworkAssemblies>
+  </metadata>
+  <files>
+    <file src="Readme.md" target="" />
+    <file src="Plugins\Rhetos.ODataGenerator\bin\Debug\Rhetos.ODataGenerator.dll" target="Plugins" />
+    <file src="Plugins\Rhetos.ODataGenerator\bin\Debug\Rhetos.ODataGenerator.pdb" target="Plugins" />
+    <file src="Plugins\Rhetos.ODataGenerator.DefaultConcepts\bin\Debug\Rhetos.ODataGenerator.DefaultConcepts.dll" target="Plugins" />
+    <file src="Plugins\Rhetos.ODataGenerator.DefaultConcepts\bin\Debug\Rhetos.ODataGenerator.DefaultConcepts.pdb" target="Plugins" />
+    <file src="Plugins\Rhetos.ODataGenerator\bin\Debug\Microsoft.Data.Edm.dll" target="Plugins" />
+    <file src="Plugins\Rhetos.ODataGenerator\bin\Debug\Microsoft.Data.Edm.xml" target="Plugins" />
+    <file src="Plugins\Rhetos.ODataGenerator\bin\Debug\Microsoft.Data.OData.dll" target="Plugins" />
+    <file src="Plugins\Rhetos.ODataGenerator\bin\Debug\Microsoft.Data.OData.xml" target="Plugins" />
+    <file src="Plugins\Rhetos.ODataGenerator\bin\Debug\Microsoft.Data.Services.dll" target="Plugins" />
+    <file src="Plugins\Rhetos.ODataGenerator\bin\Debug\Microsoft.Data.Services.xml" target="Plugins" />
+    <file src="Plugins\Rhetos.ODataGenerator\bin\Debug\Microsoft.Data.Services.Client.dll" target="Plugins" />
+    <file src="Plugins\Rhetos.ODataGenerator\bin\Debug\Microsoft.Data.Services.Client.xml" target="Plugins" />
+    <file src="Plugins\Rhetos.ODataGenerator\bin\Debug\System.Spatial.dll" target="Plugins" />
+    <file src="Plugins\Rhetos.ODataGenerator\bin\Debug\System.Spatial.xml" target="Plugins" />
+    <file src="Plugins\Rhetos.ODataGenerator\bin\Debug\System.Web.Mvc.dll" target="Plugins" />
+    <file src="Packages\ASP.NET\System.Web.Razor.dll" target="Plugins" />
+    <file src="Packages\ASP.NET\System.Web.WebPages.Razor.dll" target="Plugins" />
+    <file src="Packages\ASP.NET\System.Web.WebPages.dll" target="Plugins" />
+  </files>
+</package>

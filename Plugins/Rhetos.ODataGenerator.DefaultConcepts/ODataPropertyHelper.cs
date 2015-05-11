@@ -43,7 +43,7 @@ namespace Rhetos.ODataGenerator.DefaultConcepts
         private static string InitializationCodeSnippet(PropertyInfo info, string nameSuffix)
         {
             return string.Format(@",
-                        {0} = e.{1}", info.Name+nameSuffix, string.IsNullOrEmpty(nameSuffix)?info.Name:info.Name + "." + nameSuffix);
+                        {0} = e.{1}", info.Name+nameSuffix, string.IsNullOrEmpty(nameSuffix)?info.Name:info.Name + nameSuffix);
         }
 
         public static void GenerateCodeForType(PropertyInfo info, ICodeBuilder codeBuilder, string type, string nameSuffix = "")

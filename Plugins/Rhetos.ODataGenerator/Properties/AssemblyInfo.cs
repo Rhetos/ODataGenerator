@@ -29,7 +29,7 @@ using System.Runtime.InteropServices;
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("Omega software")]
 [assembly: AssemblyProduct("Rhetos.ODataGenerator")]
-[assembly: AssemblyCopyright("Copyright (C) Omega software 2015")]
+[assembly: AssemblyCopyright("Copyright (C) Omega software 2016")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 
@@ -51,6 +51,6 @@ using System.Runtime.InteropServices;
 // You can specify all the values or you can default the Build and Revision Numbers 
 // by using the '*' as shown below:
 // [assembly: AssemblyVersion("1.0.*")]
-[assembly: AssemblyVersion("2.0.0")]
-[assembly: AssemblyFileVersion("2.0.0")]
-[assembly: AssemblyInformationalVersion("2.0.0-alpha003")]
+[assembly: AssemblyVersion("2.0.1")]
+[assembly: AssemblyFileVersion("2.0.1")]
+[assembly: AssemblyInformationalVersion("2.0.1-alpha001")]

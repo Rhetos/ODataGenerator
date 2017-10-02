@@ -250,7 +250,8 @@ namespace Rhetos.OData
             codeBuilder.AddReferencesFromDependency(typeof(Rhetos.Security.Claim));
             codeBuilder.AddReferencesFromDependency(typeof(Rhetos.UserException));
 
-            codeBuilder.AddReference(Path.Combine(_rootPath, "ServerDom.dll"));
+            foreach (var file in Directory.GetFiles(_rootPath, "ServerDom*.dll", SearchOption.AllDirectories))
+                codeBuilder.AddReference(file);
             codeBuilder.AddReference(Path.Combine(_rootPath, "Autofac.dll"));
         }
 

@@ -75,7 +75,7 @@ namespace Rhetos.ODataGenerator
 
         public IEnumerable<string> Dependencies
         {
-            get { return new []{""}; }
+            get { return null; }
         }
     }
 }

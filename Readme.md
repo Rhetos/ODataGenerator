@@ -1,14 +1,11 @@
-ODataGenerator
-=================
+# ODataGenerator
 
-ODataGenerator is a DSL package (a plugin module) for [Rhetos development platform](https://github.com/Rhetos/Rhetos).
-
-ODataGenerator automatically generates OData interface (Open Data Protocol) for all entities and other queryable data structures that are defined in a Rhetos application.
+ODataGenerator is a plugin package for [Rhetos development platform](https://github.com/Rhetos/Rhetos).
+It automatically generates OData interface (Open Data Protocol) for all entities and other queryable data structures that are defined in a Rhetos application.
 
 See [rhetos.org](http://www.rhetos.org/) for more information on Rhetos.
 
-Features
-========
+## Features
 
 Current OData interface only supports query operations.
 
@@ -26,27 +23,16 @@ Usage examples, for Rhetos service running on `http://localhost/Rhetos`:
    After reading the service metadata, LinqPad will show all available entities.
    Right-click on any entity to start querying.
 
-Prerequisites
-=============
+## Build
 
-Utilities in this project are based on relative path to Rhetos repository. [Rhetos source](https://github.com/Rhetos/Rhetos) must be downloaded to a folder with relative path `..\..\Rhetos`. 
+To build the package from source, run `Build.bat`.
+The script will pause in case of an error.
+The build output is a NuGet package in the "Install" subfolder.
 
-Sample folder structure:
- 
-	\ROOT
-		\Rhetos
-		\RhetosPackages
-			\ODataGenerator
+## Installation
 
+To install this package to a Rhetos server, add it to the Rhetos server's *RhetosPackages.config* file
+and make sure the NuGet package location is listed in the *RhetosPackageSources.config* file.
 
-Build and Installation
-======================
-
-Build package with `Build.bat`. Check BuildError.log for errors.
-
-Instalation package creation:
-
-1. Set the new version number in `ChangeVersion.bat` and start it.
-2. Start `CreatePackage.bat`. Instalation package (.zip) is going to be created in parent directory of ODataGenerator.
-
-The generated web service uses *Microsoft WCF Data Services 5.0*. The Data Services dlls are automatically deployed with the ODataGenerator package.
+* The package ID is "**Rhetos.ODataGenerator**".
+* For more information, see [Installing plugin packages](https://github.com/Rhetos/Rhetos/wiki/Installing-plugin-packages).

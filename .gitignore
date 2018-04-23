@@ -118,3 +118,5 @@ Packages
 # Rhetos
 RhetosSourcePath.txt
 FileVersions.txt
+/Install
+/.vs

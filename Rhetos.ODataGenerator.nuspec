@@ -13,6 +13,10 @@
     <tags>Rhetos plugin</tags>
     <dependencies>
       <dependency id="Rhetos" version="2.0.0" />
+      <dependency id="Microsoft.Data.Services" version="5.6.4" />
+      <dependency id="Microsoft.Web.Xdt" version="2.1.1" />
+      <dependency id="Microsoft.AspNet.WebPages" version="2.0.20710.0" />
+      <dependency id="Microsoft.AspNet.Mvc" version="4.0.40804" />
     </dependencies>
   </metadata>
   <files>
@@ -21,19 +25,5 @@
     <file src="Plugins\Rhetos.ODataGenerator\bin\Debug\Rhetos.ODataGenerator.pdb" target="lib\net451" />
     <file src="Plugins\Rhetos.ODataGenerator.DefaultConcepts\bin\Debug\Rhetos.ODataGenerator.DefaultConcepts.dll" target="lib\net451" />
     <file src="Plugins\Rhetos.ODataGenerator.DefaultConcepts\bin\Debug\Rhetos.ODataGenerator.DefaultConcepts.pdb" target="lib\net451" />
-    <file src="Plugins\Rhetos.ODataGenerator\bin\Debug\Microsoft.Data.Edm.dll" target="lib\net451" />
-    <file src="Plugins\Rhetos.ODataGenerator\bin\Debug\Microsoft.Data.Edm.xml" target="lib\net451" />
-    <file src="Plugins\Rhetos.ODataGenerator\bin\Debug\Microsoft.Data.OData.dll" target="lib\net451" />
-    <file src="Plugins\Rhetos.ODataGenerator\bin\Debug\Microsoft.Data.OData.xml" target="lib\net451" />
-    <file src="Plugins\Rhetos.ODataGenerator\bin\Debug\Microsoft.Data.Services.dll" target="lib\net451" />
-    <file src="Plugins\Rhetos.ODataGenerator\bin\Debug\Microsoft.Data.Services.xml" target="lib\net451" />
-    <file src="Plugins\Rhetos.ODataGenerator\bin\Debug\Microsoft.Data.Services.Client.dll" target="lib\net451" />
-    <file src="Plugins\Rhetos.ODataGenerator\bin\Debug\Microsoft.Data.Services.Client.xml" target="lib\net451" />
-    <file src="Plugins\Rhetos.ODataGenerator\bin\Debug\System.Spatial.dll" target="lib\net451" />
-    <file src="Plugins\Rhetos.ODataGenerator\bin\Debug\System.Spatial.xml" target="lib\net451" />
-    <file src="Plugins\Rhetos.ODataGenerator\bin\Debug\System.Web.Mvc.dll" target="lib\net451" />
-    <file src="Packages\ASP.NET\System.Web.Razor.dll" target="lib\net451" />
-    <file src="Packages\ASP.NET\System.Web.WebPages.Razor.dll" target="lib\net451" />
-    <file src="Packages\ASP.NET\System.Web.WebPages.dll" target="lib\net451" />
   </files>
 </package>
